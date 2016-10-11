@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Splunkbase History</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal-330.css">
+		<link rel="stylesheet" href="css/splunk-night-330.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Splunkbase</h1>
+					<p>Past, present, and future.</p>
+					<small>Authored by <a href="http://www.kellengreen.com/">Kellen Green</a></small>
+				</section>
+
+				<section>
+					<h1>I mean...</h1>
+					<h3>Spacecake</h3>
+					<h3>SplunkForge</h3>
+					<h3>DashBase</h3>
+					<h3>Splunk>Apps</h3>
+					<h3>Splunkbase?</h3>
+					<small>That site where Splunk downloads tarballs from</small>
+				</section>
+
+				<section>
+					<h1>SplunkForge</h1>
+					<p>Splunkbase for the 3.x era of Splunk.</p>
+					<p>Little information about it exists today.</p>
+					<p>Funny enough, you can still find references to it on <a target="_blank" href="https://www.splunk.com/view/SP-CAAAAJS">splunk.com</a>.</p>
+				</section>
+
+				<section>
+					<h1>Splunkbase '10</h1>
+					<p>Ran on PHP, MySQL, and a in-house web framework.<p>
+					<p>Shared an Apache process with <a target="_blank" href="https://www.splunk.com/">splunk.com</a>.<p>
+					<p>Fun fact, this code base is still powers <a target="_blank" href="https://newhire.splunk.com/">newhire.splunk.com</a>.<p>
+					<a target="_blank" href="img/sb_2010.png"><img src="img/sb_2010.png"></a>
+				</section>
+
+				<section>
+					<h1>DashBase '11</h1>
+					<p>Site merged with <a target="_blank" href="https://answers.splunk.com/">Splunk&gt;Answers</a>.</p>
+					<p>Introduced a split domain hosting system.</p>
+					<p>"splunk-base" for Q&amp;A and "splunkbase" for apps.</p>
+					<p>The Q&amp;A site is managed by DZone, a 3rd party provider.</p>
+					<a target="_blank" href="img/sb_2011.png"><img src="img/sb_2011.png"></a>
+				</section>
+
+				<section>
+					<h1>Great Escape '12</h1>
+					<p>All PHP was dropped in favor of Python and Django.<p>
+					<p>Hosting moved to dedicated machines.<p>
+					<p>Laid ground work for future expansion.</p>
+				</section>
+
+				<section>
+					<h1>Splunk>Apps '13</h1>
+					<p>Split Splunkbase into <a target="_blank" href="https://splunkbase.splunk.com/">Splunk&gt;Apps</a> and <a target="_blank" href="https://answers.splunk.com/">Splunk&gt;Answers</a>.</p>
+					<p>Complete redesign for the Apps site.<p>
+					<a target="_blank" href="img/sb_2013.png"><img src="img/sb_2013.png"></a>
+				</section>
+
+				<section>
+					<h1>To the Cloud! '14</h1>
+					<p>Migrated all infrastructure to AWS.<p>
+					<p>Drastically improved search with Solr.</p>
+					<p>App packages served out of CloudFront CDN.</p>
+					<p>Moved to PostgreSQL.<p>
+					<p>Added Memcached.</p>
+					<p>App analytics added for developers.</p>
+				</section>
+
+				<section>
+					<h1>Redshirt '15</h1>
+					<p>Site redesign for the app certification project.</p>
+					<p>The Splunkbase branding was brought back.</p>
+					<a target="_blank" href="img/sb_2015.png"><img src="img/sb_2015.png"></a>
+				</section>
+
+				<section>
+					<h1>Brilliant '16</h1>
+					<p>Site redesign for the curated content project.</p>
+					<p>Added responsive design.</p>
+					<a target="_blank" href="img/sb_2016.png"><img src="img/sb_2016.png"></a>
+				</section>
+
+				<section>
+					<h2>Splunkbase and Splunk</h2>
+				</section>
+
+				<section>
+					<h1>App Browser</h1>
+					<p>JSON API allows users to browse for apps within Splunk.</p>
+					<p>Documentation is available <a target="_blank" href="https://confluence.splunk.com/display/PROD/Splunkbase+API+v1+Documentation">here</a>.</p>
+				</section>
+
+				<section>
+					<h1>Authentication</h1>
+					<p>Authenticates users for downloading apps directly within Splunk.</p>
+					<p>User credentials are NOT stored on <a target="_blank" href="https://splunkbase.splunk.com">Splunkbase</a>.</p>
+					<p>The request is instead passed along to <a target="_blank" href="https://www.splunk.com">splunk.com</a> for verification.</p>
+				</section>
+
+				<section>
+					<h1>App Upgrade</h1>
+					<p>At login Splunk sends a list of installed apps to <a target="_blank" href="https://splunkbase.splunk.com">Splunkbase</a>.</p>
+					<p><a target="_blank" href="https://splunkbase.splunk.com">Splunkbase</a> responds with a list of upgrade candidates.</p>
+					<p>The data included in this API call are later used for app analytics.</p>
+				</section>
+
+				<section>
+					<h1>Retrospective</h1>
+					<p>No ability for developers to monetize content.</p>
+					<p>Open infrastructure leads to security vulnerabilities.</p>
+					<p>Many apps are of poor quality.</p>
+					<p>Our <a target="_blank" href="http://dev.splunk.com/view/get-started/SP-CAAAESC">docs</a> are <a target="_blank" href="http://wiki.splunk.com/Community:Creating_your_first_application">all</a> over the <a target="_blank" href="http://docs.splunk.com/Documentation/Splunkbase/splunkbase/Splunkbase/Introduction">place</a>.</p>
+				</section>
+
+				<section>
+					<h2>What questions can I answer?</h2>
+				</section>
+
+				<section>
+					<h1>Thank you</h1>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal-330.js"></script>
+		<script>Reveal.initialize({history: true})</script>
+	</body>
+</html>
